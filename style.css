@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&display=swap');
+*,
+html,
+body {
+  font-family: 'Montserrat', serif;
+  font-size: 10px;
+}
+
+body {
+  font-size: 1rem;
+  background: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+  height: 100vh;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid inherit;
+  background: white;
+  width: 350px;
+  /* Разобраться с высотой после напослнения контентом */
+
+  border-radius: 10px;
+}
+@media (min-width: 786px) {
+  main {
+    flex-direction: row;
+    width: 600px;
+    height: 44rem;
+  }
+}
+.main_img {
+  width: 350px;
+  max-width: 100%;
+  height: 300px;
+  border-radius: 10px 10px 0 0;
+  background-image: url('images/image-product-mobile.jpg');
+  background-position: 24% 20%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 1rem;
+}
+@media (min-width: 786px) {
+  .main_img {
+    max-width: 35rem;
+    width: 100%;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    margin-bottom: 0;
+    height: 44rem;
+    border-bottom-left-radius: 10px;
+    background-image: url('images/image-product-desktop.jpg');
+    background-position: 24% 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.main_content {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+@media (min-width: 786px) {
+  .main_content {
+    padding-left: 2.5rem;
+  }
+}
+.title_content {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  color: hsl(228, 12%, 48%);
+}
+@media (min-width: 786px) {
+  .title_content {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 3rem;
+  }
+}
+h1 {
+  font-family: 'Fraunces', serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: 'SOFT' 0, 'WONK' 0;
+  font-size: 2.9rem;
+}
+.content_p {
+  color: hsl(228, 12%, 48%);
+  font-size: 1.4rem;
+  max-width: 28.7rem;
+  font-weight: 500;
+  margin: 0;
+  line-height: 23px;
+  margin-bottom: 2rem;
+}
+.price_wrapper {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.main_price {
+  font-family: 'Fraunces', serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: 'SOFT' 0, 'WONK' 0;
+  font-size: 2.9rem;
+  margin: 0;
+  color: hsl(158, 36%, 37%);
+}
+.discount_price {
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+  font-size: 1.4rem;
+  margin: 0;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottom_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 1rem;
+  background: hsl(158, 36%, 37%);
+  width: 100%;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  height: 4.5rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+.bottom_wrapper:hover {
+  background: hsl(157, 36%, 17%);
+}
